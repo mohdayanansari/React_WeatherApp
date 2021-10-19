@@ -12,8 +12,6 @@ const WeatherCard = ({
 }) => {
   const [weatherState, setWeatherState] = useState();
 
-  //   console.log(tempInfo.weathermood);
-  //   console.log(tempInfo);
   useEffect(() => {
     if (weathermood) {
       switch (weathermood) {
@@ -79,7 +77,7 @@ const WeatherCard = ({
               }
             ></i>
             <p className="text-sm">
-              {humidity} PM <br />
+              {humidity} <br />
               Humidity
             </p>
           </div>
@@ -92,7 +90,7 @@ const WeatherCard = ({
               }
             ></i>
             <p className="text-sm">
-              {pressure} PM <br />
+              {pressure} <br />
               Pressure
             </p>
           </div>
@@ -105,7 +103,7 @@ const WeatherCard = ({
               }
             ></i>
             <p className="text-sm">
-              {speed} PM <br />
+              {speed} <br />
               Speed
             </p>
           </div>
