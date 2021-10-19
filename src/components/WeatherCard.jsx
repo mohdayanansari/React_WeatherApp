@@ -13,28 +13,26 @@ const WeatherCard = ({
   const [weatherState, setWeatherState] = useState();
 
   useEffect(() => {
-    if (weathermood) {
-      switch (weathermood) {
-        case "Clouds":
-          setWeatherState("wi-day-cloudy");
-          break;
-        case "Haze":
-          setWeatherState("wi-fog");
-          break;
-        case "Clear":
-          setWeatherState("wi-day-sunny");
-          break;
-        case "Rain":
-          setWeatherState("wi-day-rain");
-          break;
-        case "Mist":
-          setWeatherState("wi-dust");
-          break;
+    switch (weathermood) {
+      case "Clouds":
+        setWeatherState("wi-day-cloudy");
+        break;
+      case "Haze":
+        setWeatherState("wi-fog");
+        break;
+      case "Clear":
+        setWeatherState("wi-day-sunny");
+        break;
+      case "Rain":
+        setWeatherState("wi-day-rain");
+        break;
+      case "Mist":
+        setWeatherState("wi-dust");
+        break;
 
-        default:
-          setWeatherState("wi-day-sunny");
-          break;
-      }
+      default:
+        setWeatherState("wi-day-sunny");
+        break;
     }
   }, [weathermood]);
 

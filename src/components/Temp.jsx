@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import WeatherCard from "./WeatherCard";
 
 const Temp = () => {
-  const [searchValue, setSearchValue] = useState("faizabad");
+  const [searchValue, setSearchValue] = useState("pune");
   const [tempInfo, setTempInfo] = useState({});
 
   const getWeatherInfo = async () => {
@@ -68,12 +68,11 @@ const Temp = () => {
 
         <WeatherCard {...tempInfo} />
 
-        <p className="text-white text-center text-xs lg:mt-2 mt-5 text-opacity-50">
-          Made by ©️ 
-          <a href="https://github.com/objectorienteddev07"> Ayan Ansari</a> ||
-          2021
-        </p>
+
+        <p className="text-white text-center text-xs lg:mt-2 mt-5 text-opacity-50">Made by <a href="https://github.com/objectorienteddev07">Ayan Ansari</a> || 2021</p>
       </div>
+
+      
     </>
   );
 };
